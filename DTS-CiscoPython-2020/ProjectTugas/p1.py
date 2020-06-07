@@ -1,6 +1,8 @@
 # nama file p1.py
 # Isikan nama anda dan copy semua cell code yang dengan komentar #Graded
 
+priority = 1
+
 # netacad email cth: 'abcd@gmail.com'
 email = 'bigmasterindra@yahoo.com'
 # name : Indra Nurwibisono
@@ -68,7 +70,7 @@ def discounted_price(total, discount, minprice=100):
     pass
     # MULAI KODEMU DI SINI
     sum = 0
-    if minprice < 100:
+    if total < minprice:
         sum = total
     else:
         sum = total - (total * discount / 100)
@@ -88,8 +90,11 @@ def print_summary(items, fprice):
             totalHarga[x] = count[x] * fprice[x]
 
     totalHargabuah = total_price(count, fprice)
+    discountTotal = 10
+    minprice = 100
 
     for x in count:
         print(count[x], x, ':', totalHarga[x])
     print('total :', totalHargabuah)
-    print('discount price :', discounted_price(totalHargabuah, 10, 100))
+    print('discount price :', discounted_price(
+        totalHargabuah, discountTotal, minprice))
