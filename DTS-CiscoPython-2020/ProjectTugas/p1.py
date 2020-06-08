@@ -20,7 +20,7 @@ def letter_catalog(items, letter='A'):
     for n in range(len(items)):
         if items[n][0].lower() == letter.lower():
             l.append(items[n])
-    print(l)
+    return l
 
 # Graded
 
