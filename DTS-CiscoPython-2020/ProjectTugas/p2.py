@@ -6,7 +6,7 @@
 # nilai priority submisi sebelumnya
 # JIKA TIDAK ADA VARIABLE priority DIANGGAP priority=0
 import random
-priority = 1
+priority = 2
 
 # netacad email cth: 'abcd@gmail.com'
 email = 'bigmasterindra@yahoo.com'
@@ -20,11 +20,9 @@ def isPointInCircle(x, y, r, center=(0, 0)):
     pass
     dBoolean = None
     if (((x - center[0])**2) + ((y - center[1])**2)) <= r**2:
-        dBoolean = True
+        return True
     else:
-        dBoolean = False
-
-    return dBoolean
+        return False
 
 
 # Graded
