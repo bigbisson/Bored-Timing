@@ -1,0 +1,68 @@
+Email: bigmasterindra@yahoo.com -- priority: 0
+Final Score : 73
+
+Items test cases: 
+format result:[scorer,expected value(s),expected dtype,your value(s),your dtype]
+======================================
+isPointInCircle :
+case inputs: [(1, 1, 1), {'center': (0, 0)}]
+Results: ['Benar', False, type class 'bool', False, type class 'bool', 'seed : 0']
+case inputs: [(12, 0, 2), {'center': (10, 0)}]
+Results: ['Benar', True, type class 'bool', True, type class 'bool', 'seed : 1']
+case inputs: [(1, 1, 1), {'center': (0, 1)}]
+Results: ['Benar', True, type class 'bool', True, type class 'bool', 'seed : 2']
+case inputs: [(1, 0, 1), {'center': (0, 0)}]
+Results: ['Benar', True, type class 'bool', True, type class 'bool', 'seed : 3']
+case inputs: [(1, 2, 1), {'center': (0, 2)}]
+Results: ['Benar', True, type class 'bool', True, type class 'bool', 'seed : 4']
+>>>>>Item score: 1
+
+generateRandomSquarePoints :
+case inputs: [(5, 1), {'center': (0, 0)}]
+Results: ['Benar', [[0.3444218515250481, 0.2579544029403025], [-0.079428419169155, -0.24108324970703665], [0.01127472136860852, -0.09506586254958571], [0.2837985890347726, -0.19668727392107255], [-0.02340304584764419, 0.0833820394550312]], type class 'list', [[0.3444218515250481, 0.2579544029403025], [-0.079428419169155, -0.24108324970703665], [0.01127472136860852, -0.09506586254958571], [0.2837985890347726, -0.19668727392107255], [-0.02340304584764419, 0.0833820394550312]], type class 'list', 'seed : 0']
+case inputs: [(5, 2), {'center': (10, 0)}]
+Results: ['Salah', [[9.268728488224802, 0.6948674738744653], [10.527549237953227, -0.4898619485211566], [9.990870174183883, -0.10101787042252375], [10.303185945445525, 0.5774467022710263], [9.18771917354847, -0.9433050469559874]], type class 'list', [[7.92508604710079, 0.6948674738744653], [2.8898030481870878, -0.4898619485211566], [5.036519303264472, -0.10101787042252375], [3.7872562182178964, 0.5774467022710263], [8.24912330580612, -0.9433050469559874]], type class 'list', 'seed : 1']
+case inputs: [(5, 3), {'center': (1, 1)}]
+Results: ['Salah', [[2.368102815667748, 2.343482461178048], [-0.33034589681957394, -0.2453840145232351], [2.006496634388349, 1.7079099672055698], [1.5091912043206626, 0.4244093727674326], [1.3178324970353872, 1.3204052009225138]], type class 'list', [[1.4120685437784988, 1.3956549741186988], [-0.3868972645463826, -0.33025600968215674], [1.1709977562588991, 0.9719399781370466], [0.8394608028804418, 0.11627291517828842], [0.7118883313569249, 0.7136034672816758]], type class 'list', 'seed : 2']
+case inputs: [(5, 2), {'center': (100, 100)}]
+Results: ['Salah', [[99.47592925418378, 100.0884584505919], [99.73991033309616, 100.20784007719239], [100.25144060821611, 99.13105771847962], [99.02633598310975, 100.67493816419292], [99.51870802865602, 99.46866192209339]], type class 'list', [[75.67946654499465, 45.66553592099672], [62.74439367828823, 39.815836217572944], [37.679410197410704, 92.57817179449832], [97.70953682762233, 16.928029954546915], [73.58330659585525, 76.03556581742376]], type class 'list', 'seed : 3']
+>>>>>Item score: 0.25
+
+MCCircleArea :
+case inputs: [(1, 10), {'center': (0, 0)}]
+Results: ['Benar', 3.2, type class 'float', 3.2, type class 'float', 'seed : 0']
+case inputs: [(1, 10), {'center': (10, 10)}]
+Results: ['Benar', 2.0, type class 'float', 2.0, type class 'float', 'seed : 1']
+case inputs: [(2, 10), {'center': (10, 10)}]
+Results: ['Salah', 11.2, type class 'float', 5.6, type class 'float', 'seed : 2']
+case inputs: [(3, 10), {'center': (100, 20)}]
+Results: ['Salah', 32.4, type class 'float', 10.8, type class 'float', 'seed : 3']
+case inputs: [(2, 10), {'center': (0, 10)}]
+Results: ['Salah', 11.2, type class 'float', 5.6, type class 'float', 'seed : 4']
+>>>>>Item score: 0.4
+
+LLNPiMC :
+case inputs: [(10, 20), {}]
+Results: ['Benar', 3.02, type class 'float', 3.02, type class 'float', 'seed : 0']
+case inputs: [(15, 10), {}]
+Results: ['Benar', 2.986667, type class 'float', 2.986667, type class 'float', 'seed : 1']
+case inputs: [(10, 30), {}]
+Results: ['Benar', 3.093333, type class 'float', 3.093333, type class 'float', 'seed : 2']
+case inputs: [(30, 25), {}]
+Results: ['Benar', 3.136, type class 'float', 3.136, type class 'float', 'seed : 3']
+case inputs: [(10, 40), {}]
+Results: ['Benar', 2.95, type class 'float', 2.95, type class 'float', 'seed : 4']
+>>>>>Item score: 1
+
+relativeError :
+case inputs: [(10, 11), {}]
+Results: ['Benar', 10.0, type class 'float', 10.0, type class 'float', 'seed : 0']
+case inputs: [(100, 101), {}]
+Results: ['Benar', 1.0, type class 'float', 1.0, type class 'float', 'seed : 1']
+case inputs: [(0.2, 0.2001), {}]
+Results: ['Benar', 0.05, type class 'float', 0.05, type class 'float', 'seed : 2']
+case inputs: [(3, 2.99), {}]
+Results: ['Benar', 0.333333, type class 'float', 0.333333, type class 'float', 'seed : 3']
+case inputs: [(143, 142.09), {}]
+Results: ['Benar', 0.636364, type class 'float', 0.636364, type class 'float', 'seed : 4']
+>>>>>Item score: 1
