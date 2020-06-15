@@ -6,7 +6,7 @@
 # nilai priority submisi sebelumnya
 # JIKA TIDAK ADA VARIABLE priority DIANGGAP priority=0
 import random
-priority = 0
+priority = 1
 
 # netacad email cth: 'abcd@gmail.com'
 email = 'bigmasterindra@yahoo.com'
@@ -36,8 +36,8 @@ def generateRandomSquarePoints(n, length, center=(0, 0)):
     miny = center[1]-length/2
 
     # Gunakan list comprehension dengan variable minx, miny, length, dan n
-    points = [[random.uniform(minx, length/2),
-               random.uniform(miny, length/2)] for i in range(n)]
+    points = [[random.uniform(minx, minx + length),
+               random.uniform(miny, miny + length)] for i in range(n)]
 
     return points
 
@@ -48,12 +48,13 @@ def MCCircleArea(r, n=100, center=(0, 0)):
     # MULAI KODEMU DI SINI
     pass
     titik = 0
-    points = generateRandomSquarePoints(n, r*2)
+    length = r * 2
+    points = generateRandomSquarePoints(n, length)
 
     for i in points:
         if isPointInCircle(i[0], i[1], r) == True:
             titik += 1
-    luasLingkaran = (titik / n) * r*2**2
+    luasLingkaran = (titik / n) * length**2
 
     return luasLingkaran
 
