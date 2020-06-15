@@ -18,7 +18,6 @@ email = 'bigmasterindra@yahoo.com'
 def isPointInCircle(x, y, r, center=(0, 0)):
     # MULAI KODEMU DI SINI
     pass
-    dBoolean = None
     if (((x - center[0])**2) + ((y - center[1])**2)) <= r**2:
         return True
     else:
