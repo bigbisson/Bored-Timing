@@ -5,7 +5,7 @@
 # silakan di resubmit dengan nilai variable priority yang lebih besar dari
 # nilai priority submisi sebelumnya
 # JIKA TIDAK ADA VARIABLE priority DIANGGAP priority=0
-priority = 0
+priority = 1
 
 # netacad email cth: 'abcd@gmail.com'
 email = 'bigmasterindra@yahoo.com'
