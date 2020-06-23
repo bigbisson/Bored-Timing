@@ -5,6 +5,7 @@
 # silakan di resubmit dengan nilai variable priority yang lebih besar dari
 # nilai priority submisi sebelumnya
 # JIKA TIDAK ADA VARIABLE priority DIANGGAP priority=0
+import math
 priority = 1
 
 # netacad email cth: 'abcd@gmail.com'
@@ -52,3 +53,28 @@ def deshuffle_order(sftxt, order):
     n = sorted(order)
     return ''.join(sftxt[order.index(n[i])] for i in n)
 
+# Graded
+
+
+# convert txt ke dalam bentuk list teks yang lebih pendek
+# dan terenkrispi dengan urutan acak setiap batchnya
+def send_batch(txt, batch_order, shift=3):
+    pass
+    # Mulai Kode anda di sini
+    cripted = caesar_encript(txt, shift)
+    batcher = [cripted[i:i+len(batch_order)]
+               for i in range(0, len(cripted), len(batch_order))]
+    for i in range(len(batcher)):
+        if len(batcher[i]) < 4:
+            batcher[i] = batcher[i] + '_'
+        batcher[i] = shuffle_order(batcher[i], batch_order)
+    return batcher
+
+# batch_cpr: list keluaran send_batch
+# fungsi ini akan mengembalikan lagi ke txt semula
+
+
+def receive_batch(batch_cpr, batch_order, shift=3):
+    batch_txt = [caesar_decript(deshuffle_order(
+        i, batch_order), shift) for i in batch_cpr]
+    return ''.join(batch_txt).strip('_')
