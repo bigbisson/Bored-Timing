@@ -6,7 +6,7 @@
 # nilai priority submisi sebelumnya
 # JIKA TIDAK ADA VARIABLE priority DIANGGAP priority=0
 import math
-priority = 2
+priority = 3
 
 # netacad email cth: 'abcd@gmail.com'
 email = 'bigmasterindra@yahoo.com'
