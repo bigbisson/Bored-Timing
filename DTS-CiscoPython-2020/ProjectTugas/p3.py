@@ -65,8 +65,8 @@ def send_batch(txt, batch_order, shift=3):
     batcher = [cripted[i:i+len(batch_order)]
                for i in range(0, len(cripted), len(batch_order))]
     for i in range(len(batcher)):
-        if len(batcher[i]) < 4:
-            batcher[i] = batcher[i] + '_'
+        if len(batcher[i]) < len(batch_order):
+            batcher[i] = batcher[i] + ('_'*(len(batch_order) - len(batcher[i])))
         batcher[i] = shuffle_order(batcher[i], batch_order)
     return batcher
 
