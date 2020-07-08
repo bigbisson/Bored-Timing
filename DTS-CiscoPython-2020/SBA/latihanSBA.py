@@ -25,7 +25,7 @@ class titik2d:
     self.y = y
 
   def ambiltitik(self):
-    return (self.x, self.y)
+    return self.x, self.y
   
   def tambahkan(self, titik):
     tup = self.ambiltitik()
