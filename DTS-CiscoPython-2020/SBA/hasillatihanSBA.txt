@@ -1,0 +1,24 @@
+Email: bigmasterindra@yahoo.com -- priority: undefined
+Final Score : 75
+
+Items test cases: 
+format result:[scorer,expected value(s),expected dtype,your value(s),your dtype]
+======================================
+run :
+case inputs: ['2 3', (), {}]
+Results: ['Correct', {'x': 2.0, 'y': 3.0}, type class 'dict', {'x': 2, 'y': 3}, type class 'dict']
+case inputs: ['3 3', (), {}]
+Results: ['Correct', {'x': 3.0, 'y': 3.0}, type class 'dict', {'x': 3, 'y': 3}, type class 'dict']
+case inputs: ['4 2', (), {}]
+Results: ['Correct', {'x': 4.0, 'y': 2.0}, type class 'dict', {'x': 4, 'y': 2}, type class 'dict']
+>>>>>Item score: 1
+
+titik2d :
+Compare dict : ['Correct', {'x': 2, 'y': 3}, type class 'dict', {'x': 2, 'y': 3}, type class 'dict']
+Input: [[], {}]
+ambiltitik: ['Correct', (2, 3), type class 'tuple', (2, 3), type class 'tuple']
+Input: [[type __main__.titik2d object at 0x7fe4e1f6a588], {}]
+tambahkan: ['Error', "'titik2d' object does not support indexing"]
+Input: [[], {}]
+ambiltitik: ['Incorrect', (6, 7), type class 'tuple', (2, 3), type class 'tuple']
+>>>>>Item score: 0.5
