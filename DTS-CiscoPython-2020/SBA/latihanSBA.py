@@ -27,20 +27,28 @@ class titik2d:
   def ambiltitik(self):
     return self.x, self.y
   
-  def tambahkan(self, titik):
-    tup = self.ambiltitik()
-    li = list(tup)
-    li[0] += titik[0]
-    li[1] += titik[1]
-    tup = tuple(li)
-    return tup
+  # def tambahkan(self, titik):
+  #   tup = self.ambiltitik()
+  #   li = list(tup)
+  #   li[0] += titik[0]
+  #   li[1] += titik[1]
+  #   tup = tuple(li)
+  #   return tup
+  
+  def tambahkan(self,titik):
+    self.x +=titik.x
+    self.y +=titik.y
     
 # soal 2
+# def run():
+#   pass
+#   print('Masukkan dua buah nilai untuk titik x dan y dipisahkan dengan spasi')
+#   x, y = map(int, input().split())
+  # return titik2d(x,y)
+
 def run():
-  pass
-  print('Masukkan dua buah nilai untuk titik x dan y dipisahkan dengan spasi')
-  x, y = map(int, input().split())
-  return titik2d(x,y)
+  s = list(map(float, input().split()))
+  return titik2d(*s)
 
 # >>>>>>AKHIR LEMBAR KERJA>>>>>>>>>
 
