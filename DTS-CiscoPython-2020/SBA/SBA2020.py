@@ -6,7 +6,7 @@ Lembar kerja/script Latihan SBA
 # lembar ini hanya berisi pendefinisian fungsi dan class saja
 
 # email netacad
-email = 'bigmaster.indra@gmail.com'
+email = 'bigmasterindra@yahoo.com'
 
 # >>>>>>Soal 1
 
