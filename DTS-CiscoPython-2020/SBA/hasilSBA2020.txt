@@ -1,0 +1,48 @@
+Email: bigmasterindra@yahoo.com -- priority: undefined
+Final Score : 90.625
+
+Items test cases: 
+format result:[scorer,expected value(s),expected dtype,your value(s),your dtype]
+======================================
+fungsiIO :
+case inputs: ['2 4 5', [], {}]
+Results: ['Correct', '**\n****\n*****\n', type class 'str', '**\n****\n*****\n', type class 'str']
+case inputs: ['2 1 8 4', [], {}]
+Results: ['Correct', '*\n**\n****\n********\n', type class 'str', '*\n**\n****\n********\n', type class 'str']
+case inputs: ['2 3 2 9 4 5', [], {}]
+Results: ['Correct', '**\n**\n***\n****\n*****\n*********\n', type class 'str', '**\n**\n***\n****\n*****\n*********\n', type class 'str']
+>>>>>Item score: 1
+
+caseShopia :
+case inputs: ['', [''], {}]
+Results: ['Correct', '', type class 'str', '', type class 'str']
+case inputs: ['', ['1234'], {}]
+Results: ['Correct', '', type class 'str', '', type class 'str']
+case inputs: ['', ['Ap4 k4b412?'], {}]
+Results: ['Correct', 'aPKB', type class 'str', 'aPKB', type class 'str']
+>>>>>Item score: 1
+
+usd2eur :
+case inputs: ['', [120], {}]
+Results: ['Correct', 106.68721, type class 'float', 106.68721, type class 'float']
+case inputs: ['', [30], {}]
+Results: ['Correct', 26.6718, type class 'float', 26.6718, type class 'float']
+case inputs: ['', [34], {}]
+Results: ['Correct', 30.22804, type class 'float', 30.22804, type class 'float']
+>>>>>Item score: 1
+
+MoneyChanger :
+Compare dict : ['Incorrect', {'base': 'SGD', 'percent': 2, 'dcurrency': {'USD': 1.3903614457831326, 'EUR': 1.563855421686747, 'AUD': 0.9566265060240964, 'CAD': 1.0120481927710843, 'GBP': 1.7156626506024097, 'CHF': 1.4650602409638553, 'SGD': 1.0, 'HKD': 0.1710843373493976, 'JPY': 12.771084337349398, 'MYR': 0.3132530120481928, 'SAR': 0.3373493975903614, 'WON': 1.036144578313253, 'IDR': 9.63855421686747e-05}}, type class 'dict', {'base': 'SGD', 'dcurrency': {'USD': 14425, 'EUR': 16225, 'AUD': 9925, 'CAD': 10500, 'GBP': 17800, 'CHF': 15200, 'SGD': 10375, 'HKD': 1775, 'JPY': 132500, 'MYR': 3250, 'SAR': 3500, 'WON': 10750, 'IDR': 1}, 'percent': 2}, type class 'dict']
+Input: [[100, 'USD'], {}]
+selling_price: ['Correct', 141.81687, type class 'float', 141.81687, type class 'float']
+Input: [[100, 'USD'], {}]
+buying_price: ['Correct', 136.25542, type class 'float', 136.25542, type class 'float']
+Input: [['JPY'], {}]
+change_base: ['Correct', None, type class 'NoneType', None, type class 'NoneType']
+base: ['Correct', 'JPY', type class 'str', 'JPY', type class 'str']
+dcurrency: ['Incorrect', {'USD': 0.10886792452830188, 'EUR': 0.12245283018867925, 'AUD': 0.07490566037735849, 'CAD': 0.07924528301886792, 'GBP': 0.13433962264150945, 'CHF': 0.11471698113207546, 'SGD': 0.07830188679245283, 'HKD': 0.01339622641509434, 'JPY': 1.0, 'MYR': 0.02452830188679245, 'SAR': 0.02641509433962264, 'WON': 0.08113207547169811, 'IDR': 7.547169811320754e-06}, type class 'dict', {'USD': 14425, 'EUR': 16225, 'AUD': 9925, 'CAD': 10500, 'GBP': 17800, 'CHF': 15200, 'SGD': 10375, 'HKD': 1775, 'JPY': 132500, 'MYR': 3250, 'SAR': 3500, 'WON': 10750, 'IDR': 1}, type class 'dict']
+Input: [[100, 'GPB'], {}]
+selling_price: ERROR - 'GPB'
+Input: [[100, 'GBP'], {}]
+buying_price: ['Correct', 13.16528, type class 'float', 13.16528, type class 'float']
+>>>>>Item score: 0.625
