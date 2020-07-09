@@ -36,8 +36,8 @@ class titik2d:
   #   return tup
   
   def tambahkan(self,titik):
-    self.x +=titik.x
-    self.y +=titik.y
+    self.x += titik.x
+    self.y += titik.y
     
 # soal 2
 # def run():
@@ -62,7 +62,7 @@ if __name__ == '__main__':
   # silakan test sesuka hati di sini
   t1 = run()
   print('titik1:',t1.ambiltitik())
-  titik3 = (2,3)
-  print('titik tambahan:',t1.tambahkan(titik3))
+  print('titik tambahan:',t1.tambahkan())
+  print('titik2:',t1.ambiltitik())
 
   # >>>>>AKHIR TEST DI SINI>>>>>>
